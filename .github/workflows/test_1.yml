@@ -10,6 +10,15 @@ jobs:
     - name: Checkout
       run: echo "Hello World"
 
+    - name: Touch
+      run: touch "hola.txt"
+
+    - name: Text
+      run: echo "Hola Mundo" >> hola.txt
+
+    - name: Read
+      run: cat hola.txt
+
   other:
     runs-on: ubuntu-latest
 
